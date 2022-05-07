@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "mcdonald-clone": "apps/mcdonald-clone",
+    "mcdonald-clone-e2e": "apps/mcdonald-clone-e2e"
+  }
+}
