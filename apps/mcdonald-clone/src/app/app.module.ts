@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/pages/header/header.component';
 import { FooterComponent } from './components/pages/footer/footer.component';
 import { BodyComponent } from './components/pages/body/body.component';
+import { SousMenuProduitsComponent } from './components/outils/sous-menu-produits/sous-menu-produits.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BodyComponent } from './components/pages/body/body.component';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
+    SousMenuProduitsComponent,
   ],
   imports: [BrowserModule, NgbModule],
   providers: [],
