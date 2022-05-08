@@ -28,16 +28,21 @@
             .main-header-nav-list{
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
+                // align-items: center;
                 list-style-type: none;
                 width: 690px;
                 height: 80px;
-                padding-top: 10px;
+                padding-top: 28px;
                 font-size: 17px;
 
                 li {
-                    text-decoration: none;
 
+                    height: 100%;
+
+                    text-decoration: none;
+                    &:hover {
+                        border-bottom: 3px solid #404040;
+                    }
                 }
             }
 
