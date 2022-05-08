@@ -1,0 +1,86 @@
+
+
+.main-header {
+    // position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    // height: 64px;
+    // background: rgb(151, 57, 57);
+    padding-right: 175px;
+    padding-left: 175px;
+
+    @media only screen and (max-width: 1024px){
+        // height: 80px;
+        background: #fff;
+    }
+
+    .main-header-content{
+        
+        .main-header-nav{
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .main-header-nav-list{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;
+                width: 690px;
+                height: 80px;
+                padding-top: 10px;
+                font-size: 17px;
+
+                li {
+                    text-decoration: none;
+
+                }
+            }
+
+            .group-icons {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 8%;
+                font-size: 20px;
+                
+                .icon-recherche{
+                    border-right: 1px solid #e0e0e0; 
+                    width: 40px;                   
+                }
+
+            }
+
+            .bouton {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 25%;
+                
+                .bouton-seconnecter{
+                    border: 1px solid #e0e0e0;
+                    border-radius: 5px;
+                    height: 40px;
+                    width: 140px;
+                }
+                
+                .bouton-commander {
+                    border: 1px solid #e0e0e0;
+                    border-radius: 5px;
+                    height: 40px;
+                    width: 140px;
+                    background-color: #f5b100;
+                }
+
+            }
+
+        }
+
+
+    }
+}
+
