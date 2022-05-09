@@ -69,6 +69,7 @@
                     img {
                         width: 210px;
                         height: 135px;
+                        transition: 1s;
                     }
 
 
@@ -79,14 +80,19 @@
                     right: -550px;
                     padding-top: 50px;
                     padding-bottom: 50px;
-
                 } 
+
+                .sub_menu:hover img:not(:hover) {
+                    filter: brightness(0.5)
+                }
             }
 
             li:hover .sub_menu {
                 // background-color: pink;
                 visibility: visible;
             }
+
+            
 
 
         }
