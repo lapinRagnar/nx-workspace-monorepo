@@ -12,6 +12,7 @@
     padding-right: 175px;
     padding-left: 175px;
 
+
     @media only screen and (max-width: 1024px){
         // height: 80px;
         background: #fff;
@@ -59,13 +60,14 @@
                     position: absolute;
                     width: 1500px;
                     top: 82px;
+                    background-color: #fff;
                     display: flex;
                     justify-content: space-around;
                     flex-wrap: wrap;
                     visibility: hidden;
 
                     border-bottom: 1px solid rgb(241, 244, 234);
-
+                    z-index: 10;
                     img {
                         width: 210px;
                         height: 135px;
