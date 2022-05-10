@@ -35,5 +35,25 @@
         ></i>
     </button>
 
+</div>
 
+<div  class="footer-carousel">
+    <div [ngClass]="{'active-footer-carousel footer-item ': selectedIndex === 0}">
+        Cadeau Ciné
+    </div>
+    <div  [ngClass]="{'active-footer-carousel footer-item ': selectedIndex === 1}" >
+        Du champ au restaurant
+    </div>
+    <div [ngClass]="{'active-footer-carousel footer-item ': selectedIndex === 2}" >
+        280TM
+    </div>
+    <div [ngClass]="{'active-footer-carousel footer-item ': selectedIndex === 3}">
+        Sundae
+    </div>
+    <div [ngClass]="{'active-footer-carousel footer-item ': selectedIndex === 4}">
+        Happy Meal
+    </div>
+    <div [ngClass]="{'active-footer-carousel footer-item ': selectedIndex === 5}">
+        Nos agriculteurs
+    </div>
 </div>

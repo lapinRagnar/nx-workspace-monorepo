@@ -23,6 +23,7 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
     if (this.autoSlide) {
       this.autoSlideImages()
+
     }
   }
 
@@ -53,5 +54,7 @@ export class CarouselComponent implements OnInit {
     } else {
       this.selectedIndex++
     }
+    console.log('la ba', this.selectedIndex);
+    
   }
 }

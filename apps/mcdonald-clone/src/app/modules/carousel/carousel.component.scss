@@ -104,3 +104,29 @@
     font-size: 70px;
 }
 
+// pied du carousel
+
+.footer-carousel {
+    background: #fff;
+    display: flex;
+    width: 1200px;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-top: 20px;
+
+
+
+}
+
+.active-footer-carousel {
+    border-bottom: 4px solid black;
+}
+
+.footer-item {
+    height: 100%;
+    font-weight: bold;
+}
+
+
