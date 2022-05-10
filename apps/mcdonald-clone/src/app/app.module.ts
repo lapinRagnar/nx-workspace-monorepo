@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/pages/header/header.component';
 import { FooterComponent } from './components/pages/footer/footer.component';
 import { BodyComponent } from './components/pages/body/body.component';
 import { SousMenuProduitsComponent } from './components/outils/sous-menu-produits/sous-menu-produits.component';
+import { CarouselModule } from './modules/carousel/carousel.module';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,7 @@ import { SousMenuProduitsComponent } from './components/outils/sous-menu-produit
     BodyComponent,
     SousMenuProduitsComponent,
   ],
-  imports: [BrowserModule, NgbModule],
+  imports: [BrowserModule, NgbModule, CarouselModule],
   providers: [],
   bootstrap: [AppComponent],
 })
