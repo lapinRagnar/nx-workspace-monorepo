@@ -53,8 +53,6 @@ export class CarouselComponent implements OnInit {
       this.selectedIndex = 0
     } else {
       this.selectedIndex++
-    }
-    console.log('la ba', this.selectedIndex);
-    
+    }   
   }
 }

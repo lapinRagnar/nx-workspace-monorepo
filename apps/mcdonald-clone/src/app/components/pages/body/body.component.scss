@@ -1,8 +1,64 @@
 .wrapper {
-    display: block;
     background-color: #f2f2f2;
-    height: 600px;
     width: 100%;
     left: 0;
     right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .welcome {
+        margin-top: 20px;
+
+        .welcome-title {
+            position: relative;
+            width: 100%;
+            margin-bottom: 2rem;
+            padding: 2rem 0;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+
+        .welcome-title::after{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 0.175rem;
+            left: 140px;
+            bottom: 0;
+            background: #3e2d39;
+            // ca va cacher le soulignement - ces codes en bas
+            transform: scale(0, 1);
+            transform-origin: 0 100%;
+            transition: transform 2s ease;
+        }
+
+        .welcome-title:hover::after{
+            transform: scale(1, 1);
+        }
+
+
+        .scroll::after {
+            transform: scale(1, 1);
+        }
+       
+
+
+    }
+
 }   
+
+.essai1 {
+    display: relative;
+}
+
+.essai1::before{
+    content: '';
+    display: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: yellow;
+    transform: scaleX(1);
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'mon-nx-monorepo-body',
@@ -33,6 +33,24 @@ export class BodyComponent  {
       imageAlt: "image6"
     }
   ]
+
+  scrolled = false
+
+  @HostListener("document:scroll") 
+  onWindowScroll() {
+    console.log('scrollTop => ', document.body.scrollTop);
+    console.log('un autre', document.documentElement.scrollTop)
+    
+    if (document.documentElement.scrollTop > 100) {
+      this.scrolled = true
+      console.log("scrolled = ", this.scrolled);
+      
+    } else {
+      this.scrolled = false
+      console.log("scrolled = ", this.scrolled);
+    }
+  }
+
 
 
 }
