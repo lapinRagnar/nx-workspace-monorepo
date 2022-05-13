@@ -35,7 +35,8 @@ export class BodyComponent  {
   ]
 
   scrolled = false
-
+  
+  // renvoyer true ou flase si le scrollTop > 100
   @HostListener("document:scroll") 
   onWindowScroll() {
     console.log('scrollTop => ', document.body.scrollTop);
