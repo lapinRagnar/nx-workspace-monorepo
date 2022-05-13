@@ -17,7 +17,10 @@
           "apps/mcdonald-clone/src/favicon.ico",
           "apps/mcdonald-clone/src/assets"
         ],
-        "styles": ["apps/mcdonald-clone/src/styles.scss"],
+        "styles": [
+          "node_modules/aos/dist/aos.css",
+          "apps/mcdonald-clone/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {

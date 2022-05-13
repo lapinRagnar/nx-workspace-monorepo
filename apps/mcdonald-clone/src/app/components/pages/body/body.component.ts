@@ -1,11 +1,13 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'mon-nx-monorepo-body',
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.scss'],
 })
-export class BodyComponent  {
+export class BodyComponent implements OnInit {
   
   images = [
     {
@@ -35,7 +37,12 @@ export class BodyComponent  {
   ]
 
   scrolled = false
-  
+
+  ngOnInit(): void {
+      AOS.init()
+  }
+
+
   // renvoyer true ou flase si le scrollTop > 100
   @HostListener("document:scroll") 
   onWindowScroll() {
