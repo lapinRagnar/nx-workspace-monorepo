@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import * as AOS from 'aos';
 
 
@@ -37,6 +38,13 @@ export class BodyComponent implements OnInit {
   ]
 
   scrolled = false
+  scrolled_stat = false
+  emmision_gaz = 0
+  repaServis = 0.1
+
+  constructor(private router: Router, private route: ActivatedRoute) {
+
+  }
 
   ngOnInit(): void {
       AOS.init()
@@ -58,6 +66,48 @@ export class BodyComponent implements OnInit {
       console.log("scrolled = ", this.scrolled);
     }
   }
+
+  @HostListener("document:scroll") 
+  onWindowScrollStat() {
+    console.log('scrollTop => ', document.body.scrollTop);
+    console.log('un autre', document.documentElement.scrollTop)
+    
+    if (document.documentElement.scrollTop > 3481) {
+      this.scrolled_stat = true
+      console.log("scrolled stat = ", this.scrolled_stat);
+      
+
+      
+    } else {
+      this.scrolled_stat = false
+      console.log("scrolled stat = ", this.scrolled_stat);
+    }
+  }
+
+  reloadPage() {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false
+    this.router.onSameUrlNavigation = 'reload'
+    this.router.navigate(['/'], {relativeTo: this.route})
+  }
+
+        
+  arreterAnimationNombre = setInterval(()=> {
+    
+    this.emmision_gaz++
+
+    if (this.emmision_gaz == 39 ){
+      clearInterval(this.arreterAnimationNombre)
+    }
+  }, 80)
+
+  arreterAnimationRepasServis = setInterval(()=> {
+    
+    this.repaServis = +(this.repaServis + 0.1).toFixed(1)
+
+    if (this.repaServis == 1.9 ){
+      clearInterval(this.arreterAnimationRepasServis)
+    }
+  }, 100)
 
 
 

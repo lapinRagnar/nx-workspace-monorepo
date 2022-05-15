@@ -180,13 +180,13 @@
         </div>    
     </div>
 
-    <div class="statistique">
+    <div class="statistique" [ngClass]="{'scroll': scrolled_stat }" >
         <div class="container">
-            <div class="titre">-35%</div>
+            <div class="titre">- {{emmision_gaz}} %</div>
             <div class="texte">d'emmissions** de gaz à effet de serre par repas servis d'ici 2030 </div>
         </div>
         <div class="container">
-            <div class="titre">1,9</div>
+            <div class="titre"> {{repaServis}} </div>
             <div class="texte">
                 millions de repas**** servis chaque jour
             </div>
