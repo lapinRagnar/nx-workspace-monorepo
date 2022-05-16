@@ -1,0 +1,15 @@
+.groupe{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    div{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
