@@ -18,6 +18,10 @@
         background: #fff;
     }
 
+    .router-link-active{
+        background: #f5b00076;
+        font-weight: bold;
+    }
 
 
     .main-header-nav{
@@ -38,6 +42,7 @@
             height: 80px;
             padding-top: 18px;
             font-size: 15px;
+            cursor: pointer;
 
             li {
                 // display: inline-block;
