@@ -10,7 +10,11 @@ import { FooterComponent } from './components/pages/footer/footer.component';
 import { BodyComponent } from './components/pages/body/body.component';
 import { SousMenuProduitsComponent } from './components/outils/sous-menu-produits/sous-menu-produits.component';
 import { CarouselModule } from './modules/carousel/carousel.module';
-
+import { NosEngagementsComponent } from './components/pages/body/nos-engagements/nos-engagements.component';
+import { LesBigQuestionsComponent } from './components/pages/body/les-big-questions/les-big-questions.component';
+import { EnFamilleComponent } from './components/pages/body/en-famille/en-famille.component';
+import { NosProduitsComponent } from './components/pages/body/nos-produits/nos-produits.component';
+import { NosActualitesComponent } from './components/pages/body/nos-actualites/nos-actualites.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,11 @@ import { CarouselModule } from './modules/carousel/carousel.module';
     FooterComponent,
     BodyComponent,
     SousMenuProduitsComponent,
+    NosEngagementsComponent,
+    LesBigQuestionsComponent,
+    EnFamilleComponent,
+    NosProduitsComponent,
+    NosActualitesComponent,
   ],
   imports: [BrowserModule, NgbModule, CarouselModule],
   providers: [],
