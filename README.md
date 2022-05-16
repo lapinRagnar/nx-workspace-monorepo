@@ -1,4 +1,11 @@
 
+# libraie css js animation:
+
+https://greensock.com/
+https://animejs.com/
+https://d3js.org/
+https://www.chartjs.org/
+https://threejs.org/
 
 # MonNxMonorepo
 

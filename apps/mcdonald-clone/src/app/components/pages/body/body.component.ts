@@ -42,9 +42,7 @@ export class BodyComponent implements OnInit {
   emmision_gaz = 0
   repaServis = 0.1
 
-  constructor(private router: Router, private route: ActivatedRoute) {
 
-  }
 
   ngOnInit(): void {
       AOS.init()
@@ -83,14 +81,14 @@ export class BodyComponent implements OnInit {
       console.log("scrolled stat = ", this.scrolled_stat);
     }
   }
+  // to do : a refaire plus tard quand on a des routes  
+  // reloadPage() {
+  //   this.router.routeReuseStrategy.shouldReuseRoute = () => false
+  //   this.router.onSameUrlNavigation = 'reload'
+  //   this.router.navigate(['/'], {relativeTo: this.route})
+  // }
 
-  reloadPage() {
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false
-    this.router.onSameUrlNavigation = 'reload'
-    this.router.navigate(['/'], {relativeTo: this.route})
-  }
-
-        
+  // to do : a refaire plus tard quand on a des routes      
   arreterAnimationNombre = setInterval(()=> {
     
     this.emmision_gaz++
