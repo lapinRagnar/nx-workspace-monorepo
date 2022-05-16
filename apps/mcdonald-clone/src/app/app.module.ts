@@ -15,6 +15,7 @@ import { LesBigQuestionsComponent } from './components/pages/body/les-big-questi
 import { EnFamilleComponent } from './components/pages/body/en-famille/en-famille.component';
 import { NosProduitsComponent } from './components/pages/body/nos-produits/nos-produits.component';
 import { NosActualitesComponent } from './components/pages/body/nos-actualites/nos-actualites.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { NosActualitesComponent } from './components/pages/body/nos-actualites/n
     NosProduitsComponent,
     NosActualitesComponent,
   ],
-  imports: [BrowserModule, NgbModule, CarouselModule],
+  imports: [BrowserModule, NgbModule, CarouselModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
