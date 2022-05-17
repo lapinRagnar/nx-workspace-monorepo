@@ -16,6 +16,7 @@ import { EnFamilleComponent } from './components/pages/body/en-famille/en-famill
 import { NosProduitsComponent } from './components/pages/body/nos-produits/nos-produits.component';
 import { NosActualitesComponent } from './components/pages/body/nos-actualites/nos-actualites.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { CoreAnimationDirective } from './directives/gsap/core-animation.directive';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     EnFamilleComponent,
     NosProduitsComponent,
     NosActualitesComponent,
+    CoreAnimationDirective,
   ],
   imports: [BrowserModule, NgbModule, CarouselModule, AppRoutingModule],
   providers: [],
