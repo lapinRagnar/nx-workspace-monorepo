@@ -10,6 +10,7 @@ import {
   keyframes,
   // ...
 } from '@angular/animations';
+import { fade } from './transitions/transition1';
 
 
 
@@ -18,26 +19,26 @@ import {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    // trigger('openClose', [
-    //   // ...
-    //   state('open', style({
-    //     height: '200px',
-    //     opacity: 1,
-    //     backgroundColor: 'yellow'
-    //   })),
-    //   state('closed', style({
-    //     height: '100px',
-    //     opacity: 0.8,
-    //     backgroundColor: 'blue'
-    //   })),
-    //   transition('open <=> closed', [
-    //     animate('1s')
-    //   ]),
-    //   transition('closed <=> open', [
-    //     animate('0.5s')
-    //   ]),
-    // ]),
-    // fade,
+    trigger('openClose', [
+      // ...
+      state('open', style({
+        height: '100px',
+        opacity: 1,
+        backgroundColor: 'yellow'
+      })),
+      state('closed', style({
+        height: '30px',
+        opacity: 0.8,
+        backgroundColor: 'blue'
+      })),
+      transition('open <=> closed', [
+        animate('1s')
+      ]),
+      transition('closed <=> open', [
+        animate('0.5s')
+      ]),
+    ]),
+    fade,
     trigger(
       'listAnimation',
       [
