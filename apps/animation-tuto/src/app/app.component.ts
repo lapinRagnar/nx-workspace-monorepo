@@ -7,6 +7,7 @@ import {
   transition,
   // ...
 } from '@angular/animations';
+import { fade } from './transitions/transition1';
 
 @Component({
   selector: 'mon-nx-monorepo-root',
@@ -32,13 +33,28 @@ import {
         animate('0.5s')
       ]),
     ]),
+    fade
   ]
 })
 export class AppComponent {
   title = 'animation-tuto';
   isOpen = true;
+  items: string[] = []
+
+  constructor(){
+    this.items = ['ceci est un item', 'ceci est un autre item', 'ceci est encore un autre item' ]
+  }
+
   toggle() {
     this.isOpen = !this.isOpen;
+  }
+
+  pushItem() {
+    this.items.push("c'est cool ca marche!")
+  }
+
+  removeItem() {
+    this.items.pop()
   }
 
 }
