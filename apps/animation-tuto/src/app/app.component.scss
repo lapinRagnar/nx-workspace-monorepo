@@ -17,10 +17,20 @@
         color: #fff;
     }
 
+}
+.groupe-text{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    color: rgb(90, 114, 98);
+
     .col{
-        width: 33%;
-        display: inline-block;
-        padding: 40px 0;
-        color: gray;
+        background: rgb(39, 135, 93);
+        color: white;
+        padding: 20px;
     }
+    
+
 }
