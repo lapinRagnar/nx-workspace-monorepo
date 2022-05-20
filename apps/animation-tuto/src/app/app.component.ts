@@ -25,10 +25,10 @@ import {
         opacity: 0.8,
         backgroundColor: 'blue'
       })),
-      transition('open => closed', [
+      transition('open <=> closed', [
         animate('1s')
       ]),
-      transition('closed => open', [
+      transition('closed <=> open', [
         animate('0.5s')
       ]),
     ]),
