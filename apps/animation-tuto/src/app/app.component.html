@@ -3,11 +3,19 @@
     <button type="button" (click)="toggle()">Toggle Open/Close</button>
 </nav>
   
-<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+<div class="open-close-container">
     <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
 </div>
 
-<div @fade class="">Animation fade in et fade out - animation réutilisable</div>
 
+<div class="container" [@listAnimation]="items.length" >
+
+    <button (click)="pushItem()">Add item</button>
+    <button (click)="removeItem()">remove item</button>
+
+    <div class="list" *ngFor="let item of items">
+        {{ item }}
+    </div>
+</div>
 
 <router-outlet></router-outlet>
