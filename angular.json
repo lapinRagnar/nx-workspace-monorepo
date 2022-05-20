@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "animation-tuto": "apps/animation-tuto",
+    "animation-tuto-e2e": "apps/animation-tuto-e2e",
     "gsap-tuto": "apps/gsap-tuto",
     "gsap-tuto-e2e": "apps/gsap-tuto-e2e",
     "mcdonald-clone": "apps/mcdonald-clone",

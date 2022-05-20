@@ -1,0 +1,27 @@
+{
+  "sourceRoot": "apps/animation-tuto-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/animation-tuto-e2e/cypress.json",
+        "devServerTarget": "animation-tuto:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "animation-tuto:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/animation-tuto-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["animation-tuto"]
+}
