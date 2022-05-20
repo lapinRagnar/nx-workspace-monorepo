@@ -1,0 +1,27 @@
+{
+  "sourceRoot": "apps/gsap-tuto-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/gsap-tuto-e2e/cypress.json",
+        "devServerTarget": "gsap-tuto:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "gsap-tuto:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/gsap-tuto-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["gsap-tuto"]
+}
