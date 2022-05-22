@@ -1,1 +1,11 @@
-<p>mon-lab works!</p>
+<div class="container">
+    <!-- creer une variable tempate avec #chiffre (keyup)="0" -->
+    <input type="text" placeholder="entrer chiffre" #chiffre (keyup)="0">
+
+    <p>{{ chiffre.value }}</p>
+
+    <!-- passer la variable dans le ts -->
+    <button type="button" (click)="appelChiffre(chiffre)">ok</button>
+
+    
+</div>
