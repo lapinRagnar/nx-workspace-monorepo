@@ -6,7 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  
+  ouvrirMenuBoutonConnexion = false
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
+  handleOuvrirBtnConnexion() {
+    this.ouvrirMenuBoutonConnexion = !this.ouvrirMenuBoutonConnexion
+  }
+
+
 }

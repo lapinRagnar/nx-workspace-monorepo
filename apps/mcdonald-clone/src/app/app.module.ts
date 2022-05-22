@@ -22,6 +22,8 @@ import { CustomerListComponent } from './components/mon-lab/customer-list/custom
 import { ViewchildBindingTutoComponent } from './components/mon-lab/viewchild-binding-tuto/viewchild-binding-tuto.component';
 import { EnfantComponent } from './components/mon-lab/enfant/enfant.component';
 import { ParentComponent } from './components/mon-lab/parent/parent.component';
+import { LoginComponent } from './components/authentication/login/login.component';
+import { RegisterComponent } from './components/authentication/register/register.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { ParentComponent } from './components/mon-lab/parent/parent.component';
     ViewchildBindingTutoComponent,
     EnfantComponent,
     ParentComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [BrowserModule, NgbModule, CarouselModule, AppRoutingModule],
   providers: [],
