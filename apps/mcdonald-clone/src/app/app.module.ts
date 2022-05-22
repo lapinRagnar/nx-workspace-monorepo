@@ -18,6 +18,7 @@ import { NosActualitesComponent } from './components/pages/body/nos-actualites/n
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { CoreAnimationDirective } from './directives/gsap/core-animation.directive';
 import { MonLabComponent } from './components/mon-lab/mon-lab.component';
+import { CustomerListComponent } from './components/mon-lab/customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MonLabComponent } from './components/mon-lab/mon-lab.component';
     NosActualitesComponent,
     CoreAnimationDirective,
     MonLabComponent,
+    CustomerListComponent,
   ],
   imports: [BrowserModule, NgbModule, CarouselModule, AppRoutingModule],
   providers: [],
