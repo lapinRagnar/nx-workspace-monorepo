@@ -20,6 +20,7 @@ import { CoreAnimationDirective } from './directives/gsap/core-animation.directi
 import { MonLabComponent } from './components/mon-lab/mon-lab.component';
 import { CustomerListComponent } from './components/mon-lab/customer-list/customer-list.component';
 import { ViewchildBindingTutoComponent } from './components/mon-lab/viewchild-binding-tuto/viewchild-binding-tuto.component';
+import { EnfantComponent } from './components/mon-lab/enfant/enfant.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ViewchildBindingTutoComponent } from './components/mon-lab/viewchild-bi
     MonLabComponent,
     CustomerListComponent,
     ViewchildBindingTutoComponent,
+    EnfantComponent,
   ],
   imports: [BrowserModule, NgbModule, CarouselModule, AppRoutingModule],
   providers: [],

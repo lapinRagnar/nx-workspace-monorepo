@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { EnfantComponent } from '../enfant/enfant.component';
 
 @Component({
   selector: 'mon-nx-monorepo-viewchild-binding-tuto',
@@ -9,7 +10,7 @@ export class ViewchildBindingTutoComponent  {
   
   @ViewChild('dobInput') dateOfBirth: ElementRef
   @ViewChild('ageInput') age: ElementRef
-
+  @ViewChild(EnfantComponent, {static: true}) enfant: EnfantComponent
 
   calculateAge(){
     console.log(this.dateOfBirth);
