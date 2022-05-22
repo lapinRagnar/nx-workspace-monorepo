@@ -21,6 +21,7 @@ import { MonLabComponent } from './components/mon-lab/mon-lab.component';
 import { CustomerListComponent } from './components/mon-lab/customer-list/customer-list.component';
 import { ViewchildBindingTutoComponent } from './components/mon-lab/viewchild-binding-tuto/viewchild-binding-tuto.component';
 import { EnfantComponent } from './components/mon-lab/enfant/enfant.component';
+import { ParentComponent } from './components/mon-lab/parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { EnfantComponent } from './components/mon-lab/enfant/enfant.component';
     CustomerListComponent,
     ViewchildBindingTutoComponent,
     EnfantComponent,
+    ParentComponent,
   ],
   imports: [BrowserModule, NgbModule, CarouselModule, AppRoutingModule],
   providers: [],
