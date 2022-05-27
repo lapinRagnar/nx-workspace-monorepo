@@ -24,6 +24,7 @@ import { EnfantComponent } from './components/mon-lab/enfant/enfant.component';
 import { ParentComponent } from './components/mon-lab/parent/parent.component';
 import { LoginComponent } from './components/authentication/login/login.component';
 import { RegisterComponent } from './components/authentication/register/register.component';
+import { CommanderComponent } from './components/commander/commander.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { RegisterComponent } from './components/authentication/register/register
     ParentComponent,
     LoginComponent,
     RegisterComponent,
+    CommanderComponent,
   ],
   imports: [BrowserModule, NgbModule, CarouselModule, AppRoutingModule],
   providers: [],
