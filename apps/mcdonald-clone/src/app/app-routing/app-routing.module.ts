@@ -8,6 +8,7 @@ import { EnFamilleComponent } from './../components/pages/body/en-famille/en-fam
 import { NosActualitesComponent } from './../components/pages/body/nos-actualites/nos-actualites.component';
 import { LoginComponent } from '../components/authentication/login/login.component';
 import { RegisterComponent } from '../components/authentication/register/register.component';
+import { CommanderComponent } from '../components/commander/commander.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'nos-actualites', component: NosActualitesComponent},
   {path: 'connexion', component: LoginComponent},
   {path: 'inscription', component: RegisterComponent},
+  {path: 'commander', component: CommanderComponent}
 ]
 
 @NgModule({
