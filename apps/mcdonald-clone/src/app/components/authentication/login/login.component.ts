@@ -6,7 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  constructor() {}
+  isConnexion: boolean
+  constructor() {
 
-  ngOnInit(): void {}
+    console.log("je suis dans le constructeur de login");
+  }
+
+
+
+  ngOnInit(): void {
+    console.log("dans login")
+    
+  }
+
 }

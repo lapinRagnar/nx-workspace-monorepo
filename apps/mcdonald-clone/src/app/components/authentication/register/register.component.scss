@@ -1,0 +1,160 @@
+.groupe{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    background: #f2f2f2;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+
+    .gauche{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 50px;
+        
+        .titre{
+            padding-left: 100px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .groupe{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 10px;
+ 
+            .point{
+                background: #ffbc0d;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+            .sous-titre{
+                font-weight: bold;
+            }
+        }
+        .ligne{
+            border-right: 5px solid #e1dddd;
+            height: 100px;
+            padding-left: 105px;
+            border-radius: 2%;
+        }
+    }
+
+    .droite{
+        width: 60vw;
+        height: 120vh;
+        
+        background: white;
+        margin-top: 50px;
+        border-radius: 5px;
+        padding: 40px;
+
+        .titre{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .texte{
+            margin: 30px 0;
+            font-size: 20px;
+        }
+
+        p{
+            margin: 20px 0;
+            font-size: 20px;
+        }
+
+        .control{
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            
+            
+            input{
+                height: 50px;
+                border: none;
+                margin: 15px 0;
+                border-bottom: 1px solid rgb(163, 156, 156);
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+
+        .groupe1{
+
+            background: white;
+            width: 50px;
+            .item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 5px;
+                input[type='radio'] {
+                    transform: scale(1.5);
+                    margin: 10px;
+                }
+            }
+
+        }
+
+        .groupe2{
+            margin-top: 30px;
+            font-size: 20px;
+
+            input{
+                margin-right: 10px;
+            }
+
+        }
+
+        button{
+            width: 100%;
+            height: 60px;
+            border-radius: 5px;
+            border: 1px solid rgb(184, 164, 164);
+            margin-top: 40px;
+            background:  rgba(236, 232, 232, 0.6);
+            font-size: 20px;
+        }
+
+        .vous_avez{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover{
+                color: rgb(110, 207, 110);
+            }
+
+            .texte{
+                margin-right: 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: rgb(110, 207, 110);
+                    }
+                }
+            }
+            .fa-solid{
+                cursor: pointer;
+            }
+        }
+
+        .vos_donnees{
+            p{
+                font-size: 12px;
+            }
+        }
+        
+
+    }
+
+
+}
