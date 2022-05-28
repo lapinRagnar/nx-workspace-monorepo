@@ -10,18 +10,24 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
+
+        .paragraphe {
+            p{
+                text-align: center;
+            }
+        }
 
         p{
             font-size: 25px;
             font-weight: bold;
-            margin: 5px;
+            margin: 10px;
         }
 
         .on_vous_explique{
-
+            margin-top: 30px;
             font-weight: bold;
-            font-size: 5.4rem;
-    
+            font-size: 3.9rem;
         }
     }
 

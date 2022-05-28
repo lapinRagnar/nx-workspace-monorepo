@@ -10,39 +10,16 @@ import {
   state,
   // ...
 } from '@angular/animations';
+import { listAnimation } from '../../../animations/listAnimation';
 
 @Component({
   selector: 'mon-nx-monorepo-les-big-questions',
   templateUrl: './les-big-questions.component.html',
   styleUrls: ['./les-big-questions.component.scss'],
   animations: [
-    trigger(
-      'listAnimation',
-      [
-        transition('* => *', [
-          query('.paragraphe', style({opacity: 0}), {optional: true}),
-          query(
-            '.paragraphe',
-            stagger(
-              '1s',
-              [
-                animate(
-                  '2s ease-in',
-                  keyframes(
-                    [
-                      style({opacity: 0, transform: 'translateY(-75px)', offset: 0}),
-                      style({opacity: 0.5, transform: 'translateY(-35px)', offset: 0.3}),
-                      style({opacity: 1, transform: 'translateY(0)', offset: 1}),
-                    ]
-                  )
-                )
-              ]
-            ),
-            {optional: true}
-          )
-        ])
-      ]
-    ),
+
+    listAnimation
+    ,
 
     trigger('colorerTexte', [
       state('open', style({
