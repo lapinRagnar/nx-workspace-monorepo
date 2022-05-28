@@ -1,0 +1,29 @@
+.groupe-be{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .parce_que{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .on_vous_explique{
+
+            font-weight: bold;
+            font-size: 5.4rem;
+    
+        }
+    }
+
+
+}
