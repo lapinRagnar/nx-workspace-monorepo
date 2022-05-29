@@ -73,6 +73,7 @@ export class LesBigQuestionsComponent implements OnInit {
   questionReponseDroite = true
   questionReponseBasGauche = true
   questionReponseBasDroite = true
+  questionReponseOnInvente = true
 
   ngOnInit(): void {
     AOS.init()
@@ -92,6 +93,8 @@ export class LesBigQuestionsComponent implements OnInit {
     this.questionReponseBasDroite = !this.questionReponseBasDroite
   }
 
-
+  toggleQuestionReponseOnInvente() {
+    this.questionReponseOnInvente = !this.questionReponseOnInvente 
+  }
 
 }

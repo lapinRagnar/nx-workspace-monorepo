@@ -88,8 +88,58 @@
         </div>
     </div>
 
+    <!-- debut comment on invente -->
+    
+    <div 
+        class="comment-on-invente"
+        
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="3000"
+                
+        >
+
+        <div class="question pareil" *ngIf="questionReponseOnInvente" (click)="toggleQuestionReponseOnInvente()" >
+            
+            <div class="groupe">
+                <div class="titre">
+                    « Comment on invente un burger chez McDo? »
+                </div>
+        
+                <img src="https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/blt67296744bdf1be4d/6193b4e8842a42740fcd23ed/burger.png" alt="">
+            </div>
+        
+            <div class="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+        </div>
 
 
+        <div class="reponse pareil" *ngIf="!questionReponseOnInvente" (click)="toggleQuestionReponseOnInvente()" >
+            
+            <div class="groupe">
+                <div class="titre">
+                    « Comment on invente un burger chez McDo? »
+                </div>
+
+                <div class="contenu">
+                    Avec près de 2 millions de repas distribués chaque jour en France,
+                    pas de place au hasard! Goût, texture, qualité nutritionnelle,
+                    origine... Chaque innovation produit est soigneusement étudiée, 
+                    testée et travaillée. 
+                </div>
+
+                <p>La création de nos recettes à la loupe ></p>
+        
+               
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- fin debut comment on invente -->
 
     <div 
         class="question-reponse deuxieme"

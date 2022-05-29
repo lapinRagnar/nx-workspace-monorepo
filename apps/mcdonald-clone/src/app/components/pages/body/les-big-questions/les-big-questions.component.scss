@@ -128,4 +128,86 @@
     }
 
 
+    .comment-on-invente{
+
+        margin-top: 70px;
+        width: 980px;
+        height: 630px;
+        background: #292929;
+        border-radius: 20px;
+
+        .pareil {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;  
+            flex-direction: column;
+            cursor: pointer;
+            
+            .groupe {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 100px 100px;
+                gap: 50px;
+
+                .titre {
+                    color: white;
+                    font-size: 50px;
+                    font-weight: bold;
+                    line-height: 60px;
+                }
+
+            }
+
+            
+            .plus{
+                
+                i{
+                    font-size: 30px;
+                    border: 1px solid black;
+                    padding: 10px;
+                    border-radius: 50%;
+                    background: white;
+
+                    &:hover{
+                        background: #292929;
+                    }
+                }
+            }
+
+
+        }
+
+        .reponse {
+            
+
+            .groupe{
+
+                padding: 50px 50px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                .titre{
+                    font-size: 17px;
+                    font-weight: normal;
+                }
+                
+                .contenu {
+                    font-size: 25px;
+                    justify-content: baseline;
+                    color: white;
+                    font-weight: bold;
+                    line-height: 30px;
+                }
+
+                p{
+                    color: white;
+                }
+            }
+        }
+
+
+    }
+
+
 }
