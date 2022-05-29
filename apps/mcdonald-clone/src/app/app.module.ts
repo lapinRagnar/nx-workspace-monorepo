@@ -26,6 +26,7 @@ import { ParentComponent } from './components/mon-lab/parent/parent.component';
 import { LoginComponent } from './components/authentication/login/login.component';
 import { RegisterComponent } from './components/authentication/register/register.component';
 import { CommanderComponent } from './components/commander/commander.component';
+import { QuestionReponseComponent } from './components/pages/body/les-big-questions/question-reponse/question-reponse.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +50,15 @@ import { CommanderComponent } from './components/commander/commander.component';
     LoginComponent,
     RegisterComponent,
     CommanderComponent,
+    QuestionReponseComponent,
   ],
-  imports: [BrowserModule, NgbModule, CarouselModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    CarouselModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

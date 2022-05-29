@@ -68,6 +68,25 @@ import { listAnimation } from '../../../animations/listAnimation';
 })
 export class LesBigQuestionsComponent  {
   
+  questionReponseGauche = true
+  questionReponseDroite = true
+  questionReponseBasGauche = true
+  questionReponseBasDroite = true
+
+
+  toggleQuestionReponseGauche() {
+    this.questionReponseGauche = !this.questionReponseGauche
+  }
+  toggleQuestionReponseDroite() {
+    this.questionReponseDroite = !this.questionReponseDroite
+  }
+  toggleQuestionReponseBasGauche() {
+    this.questionReponseBasGauche = !this.questionReponseBasGauche
+  }
+
+  toggleQuestionReponseBasDroite() {
+    this.questionReponseBasDroite = !this.questionReponseBasDroite
+  }
 
 
 

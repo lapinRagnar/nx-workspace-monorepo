@@ -10,5 +10,99 @@
         <p class="paragraphe on_vous_explique">On vous explique <span [@colorerTexte]="'open'">tout.</span></p>
     </div>
 
+    <div class="question-reponse">
+        <div class="gauche meme question" *ngIf="questionReponseGauche" (click)="toggleQuestionReponseGauche()" >
+            <div class="titre">
+                « Les Chiken McNuggets, c'est fait avec du vrai poulet? »
+            </div>
+            <img src="https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/bltb53b98080b5a6e07/618bb5417875d162341b0e5f/nuggets.png" alt="">
+            <div class="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="gauche meme reponse " *ngIf="!questionReponseGauche" (click)="toggleQuestionReponseGauche() " >
+            <div class="titre">
+                « Les Chiken McNuggets, c'est fait avec du vrai poulet? »
+            </div>
+            <div class="contenu">
+                Nos Chickcen McNuggets sont préparés à partir de filets de poulet 100% français.
+                Et garantis sans conservateurs, sans colorants (comme pout tout nugget) et sans arômes artificiels! 
+            </div>
+            <div class="lien">
+                <p>Nos nuggets à la loupe ></p>
+            </div>            
+        </div>
+        <div class="droite meme question" *ngIf="questionReponseDroite" (click)="toggleQuestionReponseDroite()" >
+            <div class="titre">
+                « Elle vient d'où les bulles blanches sous les burgers? »
+            </div>
+            <img src="https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/blte3d114fb743b6744/61b75d6b9fae30668efaa4b8/pain.svg" alt="">
+            <div class="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="droite meme reponse" *ngIf="!questionReponseDroite" (click)="toggleQuestionReponseDroite()">
+            <div class="titre">
+                « Elle vient d'où les bulles blanches sous les burgers? »
+            </div>
+            <div class="contenu">
+                Oubliez la légende urbaine!
+                Cette trace n'est pas une pastille, c'est simplement une bulle d'air qui se forme entre le moule et la pâte au moment de la cuisson. 
+            </div>
+            <div class="lien">
+                Nos buns à la loupe >
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="question-reponse deuxieme">
+        <div class="gauche meme question" *ngIf="questionReponseBasGauche" (click)="toggleQuestionReponseBasGauche()" >
+            <div class="titre">
+                « Ils sont faits comment vos steaks hachés chez McDo? »
+            </div>
+            <img src="https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/blt3056cf726c94ffeb/61b75d91f76b99699708196e/steak.svg" alt="">
+            <div class="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="gauche meme reponse " *ngIf="!questionReponseBasGauche" (click)="toggleQuestionReponseBasGauche()" >
+            <div class="titre">
+                « Ils sont faits comment vos steaks hachés chez McDo? »
+            </div>
+            <div class="contenu">
+                On nous prose souvent la question: non, il n'y pas pas de fausse viande dans nos 
+                burgers, oui, nos steaks hachés sont 100% pur boeuf et pur muscle... comme tout 
+                steack haché!
+            </div>
+            <div class="lien">
+                <p>Les steacks hachés chez McDo></p>
+            </div>            
+        </div>
+        <div class="droite meme question" *ngIf="questionReponseBasDroite" (click)="toggleQuestionReponseBasDroite()" >
+            <div class="titre">
+                « Il y a quoi dans vos frites? »
+            </div>
+            <img src="https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/bltfbcb667e434c382e/6193b59f2a72b06b854cabda/frite.png" alt="">
+            <div class="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="droite meme reponse" *ngIf="!questionReponseBasDroite" (click)="toggleQuestionReponseBasDroite()">
+            <div class="titre">
+                «Il y a quoi dans vos frites? »
+            </div>
+            <div class="contenu">
+               Nos frites sont fabriquées à partir de pommes de terre 100% français et cuites avec
+               une huile 100% végetale, composée de tournesol et colza.
+            </div>
+            <div class="lien">
+                tous savoir sur nos frites >
+            </div>
+        </div>
+    </div>
+
 
 </div>

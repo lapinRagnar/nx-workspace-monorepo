@@ -31,5 +31,101 @@
         }
     }
 
+    .question-reponse{
+        display: flex;
+        gap: 20px;
+        .meme{
+            border-radius: 15px;
+            width: 480px;
+            height: 630px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            gap: 50px;
+            cursor: pointer;
+
+            .titre{
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            .plus {
+                i {
+                    font-size: 30px;
+                    border: 1px solid black;
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+        
+        .gauche {
+            background: #ffbc0d;
+            
+        }
+
+        .droite{
+            background: #264f36;
+            color: white;
+            .plus {
+                i{
+                    border-color: white!important;
+                }
+            }
+        }
+
+        .gauche.meme.reponse {
+            .titre {
+                font-size: 20px;
+                font-weight: normal;
+                line-height: 20px;
+            }
+            .contenu{
+                font-weight: bold;
+                font-size: 25px;
+            }
+        }
+        .droite.meme.reponse {
+            .titre {
+                font-size: 20px;
+                font-weight: normal;
+                line-height: 20px;
+            }
+            .contenu{
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .lien{
+                p{
+                    text-align: right;
+                }
+            }
+            
+        }
+    }
+
+    .question-reponse.deuxieme{
+        margin-top: 50px;
+
+        .gauche {
+            background: #2d7b9f;
+            color: white;
+
+            .plus{
+                i{
+                    border-color: white;
+                }
+            }
+        }
+
+        .droite{
+            background: #8f3a7e;
+        }
+    }
+
 
 }
