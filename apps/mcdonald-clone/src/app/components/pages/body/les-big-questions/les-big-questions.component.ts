@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   trigger,
   style,
@@ -10,6 +10,7 @@ import {
   state,
   // ...
 } from '@angular/animations';
+import * as AOS from 'aos';
 import { listAnimation } from '../../../animations/listAnimation';
 
 @Component({
@@ -66,13 +67,16 @@ import { listAnimation } from '../../../animations/listAnimation';
 
   ]
 })
-export class LesBigQuestionsComponent  {
+export class LesBigQuestionsComponent implements OnInit {
   
   questionReponseGauche = true
   questionReponseDroite = true
   questionReponseBasGauche = true
   questionReponseBasDroite = true
 
+  ngOnInit(): void {
+    AOS.init()
+  }
 
   toggleQuestionReponseGauche() {
     this.questionReponseGauche = !this.questionReponseGauche

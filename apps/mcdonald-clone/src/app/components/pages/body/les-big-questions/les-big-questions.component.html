@@ -10,8 +10,20 @@
         <p class="paragraphe on_vous_explique">On vous explique <span [@colorerTexte]="'open'">tout.</span></p>
     </div>
 
-    <div class="question-reponse">
-        <div class="gauche meme question" *ngIf="questionReponseGauche" (click)="toggleQuestionReponseGauche()" >
+    <div 
+        class="question-reponse"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="3000"
+        >
+        <div 
+            class="gauche meme question" 
+            *ngIf="questionReponseGauche" 
+            (click)="toggleQuestionReponseGauche()" 
+            
+            data-aos="flip-left"
+
+            >
             <div class="titre">
                 « Les Chiken McNuggets, c'est fait avec du vrai poulet? »
             </div>
@@ -20,7 +32,14 @@
                 <i class="fa-solid fa-plus"></i>
             </div>
         </div>
-        <div class="gauche meme reponse " *ngIf="!questionReponseGauche" (click)="toggleQuestionReponseGauche() " >
+        <div 
+            class="gauche meme reponse " 
+            *ngIf="!questionReponseGauche" 
+            (click)="toggleQuestionReponseGauche() " 
+            
+            data-aos="flip-left"
+
+            >
             <div class="titre">
                 « Les Chiken McNuggets, c'est fait avec du vrai poulet? »
             </div>
@@ -32,7 +51,14 @@
                 <p>Nos nuggets à la loupe ></p>
             </div>            
         </div>
-        <div class="droite meme question" *ngIf="questionReponseDroite" (click)="toggleQuestionReponseDroite()" >
+        <div 
+            class="droite meme question" 
+            *ngIf="questionReponseDroite" 
+            (click)="toggleQuestionReponseDroite()" 
+            
+            data-aos="flip-left"
+            
+            >
             <div class="titre">
                 « Elle vient d'où les bulles blanches sous les burgers? »
             </div>
@@ -41,7 +67,14 @@
                 <i class="fa-solid fa-plus"></i>
             </div>
         </div>
-        <div class="droite meme reponse" *ngIf="!questionReponseDroite" (click)="toggleQuestionReponseDroite()">
+        <div 
+            class="droite meme reponse" 
+            *ngIf="!questionReponseDroite" 
+            (click)="toggleQuestionReponseDroite()"
+            
+            data-aos="flip-left"
+            
+            >
             <div class="titre">
                 « Elle vient d'où les bulles blanches sous les burgers? »
             </div>
@@ -58,8 +91,19 @@
 
 
 
-    <div class="question-reponse deuxieme">
-        <div class="gauche meme question" *ngIf="questionReponseBasGauche" (click)="toggleQuestionReponseBasGauche()" >
+    <div 
+        class="question-reponse deuxieme"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="3000"
+        >
+        <div 
+            class="gauche meme question" 
+            *ngIf="questionReponseBasGauche" 
+            (click)="toggleQuestionReponseBasGauche()" 
+            
+            data-aos="flip-left"
+            >
             <div class="titre">
                 « Ils sont faits comment vos steaks hachés chez McDo? »
             </div>
@@ -68,7 +112,13 @@
                 <i class="fa-solid fa-plus"></i>
             </div>
         </div>
-        <div class="gauche meme reponse " *ngIf="!questionReponseBasGauche" (click)="toggleQuestionReponseBasGauche()" >
+        <div 
+            class="gauche meme reponse " 
+            *ngIf="!questionReponseBasGauche" 
+            (click)="toggleQuestionReponseBasGauche()" 
+            
+            data-aos="flip-left"
+            >
             <div class="titre">
                 « Ils sont faits comment vos steaks hachés chez McDo? »
             </div>
@@ -81,7 +131,14 @@
                 <p>Les steacks hachés chez McDo></p>
             </div>            
         </div>
-        <div class="droite meme question" *ngIf="questionReponseBasDroite" (click)="toggleQuestionReponseBasDroite()" >
+        <div 
+            class="droite meme question" 
+            *ngIf="questionReponseBasDroite" 
+            (click)="toggleQuestionReponseBasDroite()" 
+            
+            data-aos="flip-left"
+
+            >
             <div class="titre">
                 « Il y a quoi dans vos frites? »
             </div>
@@ -90,7 +147,14 @@
                 <i class="fa-solid fa-plus"></i>
             </div>
         </div>
-        <div class="droite meme reponse" *ngIf="!questionReponseBasDroite" (click)="toggleQuestionReponseBasDroite()">
+        <div 
+            class="droite meme reponse" 
+            *ngIf="!questionReponseBasDroite" 
+            (click)="toggleQuestionReponseBasDroite()"
+            
+            data-aos="flip-left"
+
+            >
             <div class="titre">
                 «Il y a quoi dans vos frites? »
             </div>
