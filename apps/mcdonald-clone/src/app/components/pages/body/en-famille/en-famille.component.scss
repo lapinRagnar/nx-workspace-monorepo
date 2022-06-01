@@ -1,0 +1,378 @@
+.groupe-be {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 180px;
+    
+    .titre{
+        font-size: 15px;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+
+    .image-debut{
+        margin-bottom: 50px;
+        width: 1180px;
+        height: 442px;
+        overflow: hidden;
+        img {
+            margin: 30px 0;
+            object-position: 0 -100px;
+        }
+
+        .fade-in{
+            animation: fadeIn 5s;
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    }
+
+    .groupe-titre{
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        gap: 300px;
+        .titre{
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 50px;
+            min-width: 300px;
+        }
+        .texte{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .groupe-happy-meal {
+        display: flex;
+        gap: 100px;
+
+        .image {
+            min-width: 500px;
+            overflow: hidden;
+            img{    
+                width: 150%;
+                object-position: -100px 0;
+            }
+        }
+
+        sup{
+            font-size: 15px;
+        }
+
+        .groupe-contenu{
+            margin: 30px 0;
+            .titre{
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .texte {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            .bouton{
+                margin-top: 30px;
+                width: 349px;
+                height: 64px;
+                background-color: white;
+                border: 1px solid rgb(187, 180, 180);
+                border-radius: 5px;
+                &:hover{
+                    background-color: rgb(191, 185, 185);
+                }
+            }
+        }
+
+        
+    }
+    
+    
+    
+}
+
+.mon-image {
+
+    margin: 50px 0;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    .fond-kely {
+        width: 100%;
+        object-position: 0 -200px;
+    }
+}
+
+.groupe-be {
+    .groupe-partager-un-moment {
+        display: flex;
+        
+        .titre {
+            min-width: 580px;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .texte{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .groupe-les-livres{
+
+        margin: 50px 0;
+        display: flex;
+        gap: 20px;
+        .commun {
+
+            min-height: 580px;
+            .image {
+                width: 580px;
+                height: 361px;
+                overflow: hidden;
+                img {
+                    
+                }
+            }
+
+            .titre {
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .texte{
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            .bouton{
+                margin: 20px 0;
+                border: none;
+                background-color: white;
+
+                &:hover{
+                    color: rgb(99, 158, 99);
+                }
+            }
+
+        }
+
+        .gauche {
+            .image {
+
+                img{
+
+                }
+            }
+        }
+        .droite {
+
+            .image {
+                img{
+                    width: 580px;
+                }
+            }
+
+        }
+    }
+}
+
+.statistique {
+    background: #2d7b9f;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    .titre {
+        font-weight: bold;
+        font-size: 60px;
+        margin: 30px 0;
+    }
+
+    .texte {
+        font-size: 17px;
+    }
+}
+
+.groupe-be {
+    margin-top: 50px;
+    .groupe-a-vous-de-jouer{
+        display: flex;
+        .titre{
+            min-width: 560px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .droite{
+            p{
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+
+            .bouton {
+                border: none;
+                background: none;
+                &:hover {
+                    color: rgb(168, 207, 168);
+                }
+            }
+        }
+
+    }
+
+    .groupe-nos-engagements-jouets{
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        .gauche {
+            width: 560px;
+
+            img{
+                width: 560px;
+            }
+        }
+
+        .droite {
+            .titre{
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 17px;
+                line-height: 25px;
+
+                margin: 25px 0;
+            }
+
+            .bouton {
+                margin: 0 100px;
+                width: 308px;
+                height: 64px;
+                background: white;
+                border: 1px solid rgb(182, 156, 156);
+                border-radius: 5px;
+                &:hover {
+                    background: lightgray;
+                }
+            }
+        }
+    }
+
+}
+
+.faire-un-don{
+    width: 100%;
+    position: relative;
+
+    .image {
+        width: 100%;
+        height: 520px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .groupe-fondation{
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        width: 400px;
+        height: 380px;
+        background: white;
+        border-radius: 5px;
+        padding: 40px 40px;
+        margin-bottom: 50px;
+
+        .titre {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .texte{
+            margin-bottom: 50px;
+            line-height: 22px;
+        }
+
+        .bouton {
+            button{
+                width: 314px;
+                height: 64px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+
+        .bouton{
+            .bouton1{
+                background: #f5b100;
+                &:hover{
+                    background: #cea02e;
+                }
+            }
+        }
+        .bouton{
+            .bouton2{
+                background: none;
+                border: 1px solid rgb(231, 225, 225);
+                margin-bottom: 50px;
+                &:hover{
+                    background: lightgrey;
+                }
+            }
+        }
+
+    }
+}
+
+.groupe-be-farany{
+    margin: 80px 180px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 80px 80px;
+    gap: 50px;
+    .groupe-decouvrez-nos-menu
+    {
+        sup{
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .titre{
+            font-weight: bold;
+            font-size: 40px;
+
+        }
+        .texte{
+            margin: 40px 0;
+        }
+        .bouton{
+            border-radius: 5px;
+            width: 226px;
+            height: 64px;
+            background-color: white;
+            border: none;
+            &:hover{
+                background-color: lightgrey;
+            }
+        }
+    }
+}

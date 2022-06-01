@@ -10,7 +10,7 @@ import {
   state,
   // ...
 } from '@angular/animations';
-import * as AOS from 'aos';
+  import * as AOS from 'aos';
 import { listAnimation } from '../../../animations/listAnimation';
 
 @Component({
