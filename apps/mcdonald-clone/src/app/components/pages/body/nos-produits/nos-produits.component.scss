@@ -4,20 +4,123 @@
     justify-content: space-between;
     gap: 100px;
     .gauche{
+        position: sticky;
+        height: 500px;
+        top: 100px;
+   
         .item {
-            margin: 25px 0;
+            margin: 40px 0;
             min-width: 180px;
         }
     }
 
     .droite{
-        .titre{
-            font-weight: bold;
-            font-size: 30px;
-        }
-        .texte{
-            margin-top: 50px;
-            line-height: 25px;
+
+        display: flex;
+        flex-direction: column;
+
+        .listeItems {
+
+            .titre{
+                font-weight: bold;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .texte{
+                margin-top: 50px;
+                line-height: 25px;
+                margin-bottom: 50px;
+            }
+    
+            .groupe-menu {
+    
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+    
+                .card-menu {
+                    width: 273px;
+                    height: 330px;
+                    border: 2px solid rgb(211, 195, 195);
+                    transition: border .4s;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+        
+        
+                    &:hover{
+                        border: 3px solid #f5b100;
+                    }
+        
+                    sup{
+                        font-size: 12px;
+                    }
+        
+                    .image{
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 80%;
+                        }
+                    }
+        
+                    .titre{
+                        font-size: 20px;
+                        text-align: center;
+                    }
+        
+                }
+    
+            }
+    
+            .groupe-image-card{
+                margin-top: 50px ;
+                display: flex;
+                position: relative;
+                .image {
+                    width: 886px;
+                    height: 400px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 450px;
+                        object-position: 0 -90px;
+                    }
+                }
+                .card-moi {
+                    position: absolute;
+                    top: 40px;
+                    left: 50px;
+                    width: 295px;
+                    height: 270px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    background: white;
+                    border-radius: 5px;
+                    padding: 30px 30px;
+    
+                    .titre-1{
+                        font-weight: bold;
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+                    .button{
+                        width: 230px;
+                        height: 64px;
+                        border: 1px solid rgb(234, 223, 223);
+                        border-radius: 5px;
+                        background: white;
+                        &:hover{
+                            background: lightgrey;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

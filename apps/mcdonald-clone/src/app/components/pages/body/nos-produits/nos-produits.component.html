@@ -26,11 +26,36 @@
         </div>
     </div>
 
-    <div class="droite">
-        <div class="titre">Nos Menus</div>
-        <div class="texte">
-            Pour toutes les faims, tous les goûts, tous les âges et tous les budgets, découvrez les menus McDonald’s ! Plutôt menu burger ou menu salade ? Ou peut-être souhaitez-vous prendre un bon petit-déjeuner avec l’offre P’tit dej’ ? Les enfants ne sont pas oubliés : le menu enfant Happy Meal™ inclut un dessert fruité ainsi qu’un jouet ou un livre. 
-        </div>
+    <div class="droite" >
+       <div class="listeItems" *ngFor="let listeMenu of listeMenus">
+            <div class="titre"> {{ listeMenu.nom_list}} </div>
+                <div class="texte">
+                    {{ listeMenu.detail}}
+                </div>
+            <div class="groupe-menu">
+                <div class="card-menu" *ngFor="let liste_item of listeMenu.liste_items ">
+                    <div class="image">
+                        <img [src]="liste_item.image">
+                    </div>
+                    <div class="titre" [innerHTML]="liste_item.titre" >
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="groupe-image-card" *ngIf="listeMenu.image">
+                <div class="image">
+                    <img [src]="listeMenu.image" alt="image">
+                </div>
+                <div class="card-moi">
+                    <div class="titre-1">
+                            {{listeMenu.titre1}}
+                    </div>
+                    <button class="button">
+                        {{ listeMenu.titreBouton }}
+                    </button>
+                </div>
+            </div>
+       </div>
     </div>
 
 </div>
