@@ -1,0 +1,23 @@
+.groupe{
+    display: flex;
+    margin: 50px 180px;
+    justify-content: space-between;
+    gap: 100px;
+    .gauche{
+        .item {
+            margin: 25px 0;
+            min-width: 180px;
+        }
+    }
+
+    .droite{
+        .titre{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .texte{
+            margin-top: 50px;
+            line-height: 25px;
+        }
+    }
+}
