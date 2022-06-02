@@ -1,33 +1,113 @@
 <div class="groupe">
     <div class="gauche">
-        <div class="item">
+
+        <div class="titre-kely">
+            > {{ lien.split('-').join(' ') }}
+        </div>
+        <div 
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            (click)="goToItem('nos-menus')"
+            [ngClass]=" lien==='nos-menus' ? 'activer' : '' "
+            >
             Nos Menu
         </div>
-        <div class="item">
+        <div 
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            (click)="goToItem('nos-burgers')"
+            [ngClass]=" lien==='nos-burgers' ? 'activer' : '' "
+            >
+            Nos Burgers
+        </div>
+        <div 
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            (click)='goToItem("nos-salades-du-jour")'
+            [ngClass]=" lien==='nos-salades-du-jour' ? 'activer' : '' "
+            >
             Nos Salades du jour
         </div>
-        <div class="item">
+        <div 
+            class="item"
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            (click)="goToItem('petite-faim')"
+            [ngClass]=" lien==='petite-faim' ? 'activer' : '' "
+            >
             Petite faim
         </div>
-        <div class="item">
+        <div 
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            (click)="goToItem('nos-boissons')"
+            [ngClass]=" lien==='nos-boissons' ? 'activer' : '' "
+            >
             Nos boissons
         </div>
-        <div class="item">
+        <div 
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            (click)="goToItem('nos-desserts')"
+            [ngClass]=" lien==='nos-desserts' ? 'activer' : '' "
+            >
             Nos Desserts
         </div>
-        <div class="item">
+        <div 
+            class="item"
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            (click)='goToItem("nos-frites-&-sauces")'
+            [ngClass]=" lien==='nos-frites-&-sauces' ? 'activer' : '' "
+            >
             Nos Frites & Sauces
         </div>
-        <div class="item">
+        <div 
+            class="item"
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            (click)='goToItem("nos-grandes-salades")'
+            [ngClass]=" lien==='nos-grandes-salades' ? 'activer' : '' "
+            >
             Nos Grandes Salades
         </div>
-        <div class="item">
+        <div 
+            class="item"
+            class="item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true}"
+            routerLink=""
+            fragment="l-offre-mccafe"
+            (click)='goToItem("l-offre-mccafé")'
+            [ngClass]=" lien==='l-offre-mccafé' ? 'activer' : '' "
+            
+            >
             L'Offre McCafé
         </div>
     </div>
 
     <div class="droite" >
-       <div class="listeItems" *ngFor="let listeMenu of listeMenus">
+       <div 
+            class="listeItems" 
+            *ngFor="let listeMenu of listeMenus"
+            [id]="listeMenu.nom_list.split(' ').join('-').toLowerCase()"
+            >
             <div class="titre"> {{ listeMenu.nom_list}} </div>
                 <div class="texte">
                     {{ listeMenu.detail}}

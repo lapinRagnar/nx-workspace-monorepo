@@ -7,10 +7,28 @@
         position: sticky;
         height: 500px;
         top: 100px;
+
+        .titre-kely{
+            font-weight: bold;
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid rgb(21, 16, 26);
+            margin-bottom: 50px;
+        }
+
+
+
+        .activer {
+            font-weight: bold;
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid rgb(21, 16, 26);
+        }
    
         .item {
-            margin: 40px 0;
+            margin: 20px 0;
             min-width: 180px;
+            cursor: pointer;
         }
     }
 

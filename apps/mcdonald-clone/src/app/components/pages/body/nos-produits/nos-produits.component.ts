@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'mon-nx-monorepo-nos-produits',
@@ -8,10 +9,30 @@ import { Component, OnInit } from '@angular/core';
 export class NosProduitsComponent implements OnInit {
   
   listeMenus = ListeMenu
+  lien = ""
 
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.activatedRoute.fragment.subscribe((value) => {
+      console.log("la valeur du lien ", value)
+      if (value) {
+        this.lien = value
+      }
+      // this.jumpTo(value?.toLowerCase().replace(' ', '-'))
+    })
+  }
 
+  // jumpTo(section: any) {
+  //   document.getElementById(section)?.scrollIntoView({behavior: 'smooth'})
+  // }
+
+  goToItem(lien: any){
+    this.router.navigateByUrl("nos-produits#" + lien)
+  }
 
 }
 
@@ -272,7 +293,7 @@ const ListeMenu = [
 
 
   {
-    nom_list: "Nos Grandes Salades ",
+    nom_list: "Nos Grandes Salades",
     detail: "Grâce à des ingrédients à l’origine soigneusement contrôlée et des mélanges uniques, chaque salade McDonald’s fera de votre repas une délicieuse expérience, pleine de fraîcheur. Variez les plaisirs avec les différentes salades disponibles : la Salade Chicken Caesar et la Salade Italian Mozza",
    
     liste_items : [
@@ -293,7 +314,7 @@ const ListeMenu = [
 
 
   {
-    nom_list: "L'Offre McCafé",
+    nom_list: "L Offre McCafé",
     detail: "Offrez-vous une pause McCafé® ! Nous vous accueillons pour votre parenthèse quotidienne dans un espace chaleureux et convivial. Dégustez nos viennoiseries cuites sur place et nos pâtisseries d'inspiration américaine et accompagnez-les de boissons chaudes ou froides préparées sous vos yeux par nos baristas. ",
    
     liste_items : [
