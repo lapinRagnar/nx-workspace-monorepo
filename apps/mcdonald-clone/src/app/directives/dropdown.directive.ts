@@ -17,9 +17,9 @@ export class DropdownDirective {
   }
 }
 
-@HostListener('mouseleave') onMouseLeave() {
-  this.renderer.removeClass(this.elementRef.nativeElement, 'open');
-}
+  @HostListener('mouseleave') onMouseLeave() {
+    this.renderer.removeClass(this.elementRef.nativeElement, 'open');
+  }
 
 
 }

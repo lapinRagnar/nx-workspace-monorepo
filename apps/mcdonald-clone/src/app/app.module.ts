@@ -27,6 +27,7 @@ import { LoginComponent } from './components/authentication/login/login.componen
 import { RegisterComponent } from './components/authentication/register/register.component';
 import { CommanderComponent } from './components/commander/commander.component';
 import { QuestionReponseComponent } from './components/pages/body/les-big-questions/question-reponse/question-reponse.component';
+import { ScrollDirective } from './directives/scroll.directive';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { QuestionReponseComponent } from './components/pages/body/les-big-questi
     RegisterComponent,
     CommanderComponent,
     QuestionReponseComponent,
+    ScrollDirective,
   ],
   imports: [
     BrowserModule,
