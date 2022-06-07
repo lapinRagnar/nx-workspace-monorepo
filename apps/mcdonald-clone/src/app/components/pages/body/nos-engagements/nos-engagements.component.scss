@@ -1,0 +1,315 @@
+.groupe-be{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    .engagement_toujours{
+        position: relative;
+        .image{
+            width: 100vw;
+            height: 100vh;
+            img{
+                width: 100vw;
+                height: 100vh;
+            }
+        }
+        .groupe-texte{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 200px;
+            left: 600px;
+            width: 575px;
+            color: white;
+            
+            .titre{
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+
+            .contenu{
+                font-size: 30px;
+                text-align: center;
+                line-height: 40px;
+            }
+
+        }
+    }
+    .bouton{
+        border: 1px solid white;
+        position: relative;
+        top: 330px;
+        left: -200px;
+        width: 300px!important;
+        height: 100px;
+        // border-radius: 50%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fa-solid{
+            width: 100px;
+            // border-radius: 50%;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            
+        }
+    }
+
+    .groupe-vous-ete-ici, .meme {
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        // align-items: center;
+        justify-content: center;
+        gap: 200px;
+        padding: 0 200px;
+        .gauche {
+
+
+            margin-top: 50px;
+            width: 800px;
+
+            .titre{
+                font-weight: bold;
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+
+            .texte{
+                font-size: 30px;
+            }
+
+        }
+        .droite{
+            width: 800px;
+            .image{
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .meme{
+
+        .gauche{
+            margin-top: 50px;
+            width: 800px;
+        }
+        .droite{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            .groupe-kely{
+                .image{
+                    height: 100vh;
+                    width: auto;
+                    img{
+                        width: auto;
+                        height: 80vh;
+                    }
+
+                    
+                }
+            }
+        } 
+    }
+
+
+    
+    .groupe-lu-et-approuvee{
+        margin-left: 600px;
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        // align-items: center;
+        justify-content: center;
+        gap: 200px;
+        .gauche{
+            margin-top: 50px;
+            width: 800px;
+            .titre{
+                font-weight: bold;
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+
+            .texte{
+                font-size: 30px;
+            }
+        }
+        .droite{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            .groupe-kely{
+                .image{
+                    height: 100%;
+                    width: auto;
+                    position: relative;
+                    img{
+                        width: 150%;
+                    }
+
+                    .texte{
+                        position: absolute;
+                        top: 100px;
+                        right: -350px;
+                        p{
+                            font-size: 30px;
+                            margin: 20px;
+
+                            sup{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+
+
+    }
+
+
+    
+    .groupe-on-en-fait-plus{
+        margin-left: 500px;
+        .gauche{
+            margin-top: 50px;
+            width: 600px;
+            .titre{
+                font-weight: bold;
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+
+            .texte{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .groupe-image-agro{
+        margin-left: 300px;
+        display: flex;
+
+        .groupe-gauche{
+            img{
+                margin: 20px;
+            }
+        }
+
+        .groupe-droite{
+            width: 100%;
+            height: 100%;
+            img{
+                margin: 20px;
+                width: 582px;
+                height: 582px;
+            }
+        }
+    }
+
+    .groupe-on-arrete-pas-d-avancer{
+        margin-left: 500px;
+        .image{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            img{
+                width: 100vw;
+                height: 100vh;
+            }
+            .texte{
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                color: white;
+                width: 700px;
+                .titre{
+                    font-weight: bold;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                .contenu{
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+        
+    }
+
+    .et-on-est-pas-prete{
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .titre{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .contenu{
+            font-size: 20px;
+        }
+
+        .groupe-kely{
+            display: flex;
+            gap: 20px;
+            .date{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                div{
+                    border-radius: 10px ;
+                    background-color: #264f36;
+                    color: white;
+                    width: 80px;
+                    height: 30px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                span{
+                    border-left: 1px solid #264f36;
+                    height: 70px;
+                    transform: translateX(35px);
+                }
+                .farany{
+                    margin-bottom: 30px;
+                }
+            }
+            .texte{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                width: 300px;
+                .farany{
+                    padding-bottom: -250px;
+                    
+                }
+            }
+        }
+    }
+
+}
+
+
+
+

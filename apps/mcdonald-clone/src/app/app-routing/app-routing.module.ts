@@ -10,6 +10,7 @@ import { LoginComponent } from '../components/authentication/login/login.compone
 import { RegisterComponent } from '../components/authentication/register/register.component';
 import { CommanderComponent } from '../components/commander/commander.component';
 import { NosProduitsComponent } from '../components/pages/body/nos-produits/nos-produits.component';
+import { NosEngagementsComponent } from '../components/pages/body/nos-engagements/nos-engagements.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'inscription', component: RegisterComponent},
   {path: 'commander', component: CommanderComponent},
   {path: 'nos-produits', component: NosProduitsComponent},
+  {path: 'nos-engagements', component: NosEngagementsComponent},
 ]
 
 const routerOptions: ExtraOptions = {

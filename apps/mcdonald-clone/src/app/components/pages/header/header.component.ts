@@ -36,4 +36,8 @@ export class HeaderComponent {
     this.isConnexion = true
   }
 
+  goToNosEngagement() {
+    this.router.navigate(['/nos-engagements'])
+  }
+
 }

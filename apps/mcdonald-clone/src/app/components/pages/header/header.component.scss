@@ -19,7 +19,7 @@
     }
 
     .router-link-active{
-        background: #f5b00076;
+        font-size: 18px;
         font-weight: bold;
     }
 
@@ -93,9 +93,11 @@
                     padding-bottom: 50px;
                 } 
 
-                .sub_menu:hover img:not(:hover) {
-                    filter: brightness(0.5)
+                .sub_menu.sub_1:hover img:not(:hover) {
+                    // filter: brightness(0.2);
+                    opacity: 0.5;
                 }
+
             }
 
             li:hover .sub_menu {
