@@ -5,9 +5,6 @@
     "animation-tuto-e2e": "apps/animation-tuto-e2e",
     "gsap-tuto": "apps/gsap-tuto",
     "gsap-tuto-e2e": "apps/gsap-tuto-e2e",
-    "mcdonald-clone": "apps/mcdonald-clone",
-    "mcdonald-clone-e2e": "apps/mcdonald-clone-e2e",
-    "ngx-ubereats": "apps/ngx-ubereats",
-    "ngx-ubereats-e2e": "apps/ngx-ubereats-e2e"
+    "mcdonald-clone": "apps/mcdonald-clone"
   }
 }

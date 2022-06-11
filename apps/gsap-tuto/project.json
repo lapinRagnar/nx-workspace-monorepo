@@ -1,11 +1,14 @@
 {
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/gsap-tuto/src",
   "prefix": "mon-nx-monorepo",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/gsap-tuto",
         "index": "apps/gsap-tuto/src/index.html",
@@ -17,7 +20,9 @@
           "apps/gsap-tuto/src/favicon.ico",
           "apps/gsap-tuto/src/assets"
         ],
-        "styles": ["apps/gsap-tuto/src/styles.scss"],
+        "styles": [
+          "apps/gsap-tuto/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -82,7 +87,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/gsap-tuto"],
+      "outputs": [
+        "coverage/apps/gsap-tuto"
+      ],
       "options": {
         "jestConfig": "apps/gsap-tuto/jest.config.ts",
         "passWithNoTests": true

@@ -4,7 +4,6 @@
     "defaultBase": "master"
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular",
     "packageManager": "npm"
   },
   "implicitDependencies": {
@@ -18,12 +17,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "N2UzNzBiOTctMmFkMi00YjNiLWFlM2MtMTg2NzE1YTc0MmYxfHJlYWQtd3JpdGU="
       }
     }
@@ -51,5 +45,6 @@
       "style": "scss"
     }
   },
-  "defaultProject": "mcdonald-clone"
+  "defaultProject": "mcdonald-clone",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json"
 }
