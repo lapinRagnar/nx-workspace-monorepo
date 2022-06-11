@@ -1,3 +1,5 @@
+# un site pour eslint avec nx
+https://laptrinhx.com/the-ultimate-migration-guide-to-angular-eslint-eslint-and-nx-11-2800898814/
 
 # libraie css js animation:
 

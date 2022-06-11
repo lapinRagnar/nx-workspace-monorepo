@@ -18,11 +18,11 @@ const routes: Routes = [
   {path: 'les-big-questions', component: LesBigQuestionsComponent},
   {path: 'en-famille', component: EnFamilleComponent},
   {path: 'nos-actualites', component: NosActualitesComponent},
-  {path: 'connexion', component: LoginComponent},
-  {path: 'inscription', component: RegisterComponent},
   {path: 'commander', component: CommanderComponent},
   {path: 'nos-produits', component: NosProduitsComponent},
   {path: 'nos-engagements', component: NosEngagementsComponent},
+  {path: 'connexion', component: LoginComponent},
+  {path: 'inscription', component: RegisterComponent},
 ]
 
 const routerOptions: ExtraOptions = {

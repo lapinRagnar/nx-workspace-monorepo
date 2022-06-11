@@ -8,14 +8,27 @@
         </a>
 
         <ul class="main-header-nav-list">
-            <li class="main-header-nav-item">
-                <span class="dropdown" (click)="goToNosEngagement()" > Nos engagements</span>
-                <div class="sub_menu sub_1">
+
+            <li 
+                class="main-header-nav-item"
+                (mouseover)="afficherMenu()" 
+                (mouseout)="cacherMenu()"  
+            >
+                <span 
+                    class="dropdown" 
+                    (click)="goToNosEngagement()"
+                >
+                    Nos engagements
+                </span>
+                <div 
+                    class="sub_menu sub_1" 
+                    *ngIf="showDropdown"
+                >
                     <div class="sub_menu_item">
                         <img src="https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/bltc7275f2e535c618f/61d2db6ea2f30629e20b9b5b/1_PDT_drone_2021_08.2024_8_SLIDER-HP-Navlight.jpg?auto=webp&width=432&disable=upscale" alt="">
                         <p>Du champ au restaurant</p>
                     </div>
-                    <div class="sub_menu_item">
+                    <!-- <div class="sub_menu_item">
                         <img src="https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/blt0c24f874e1b99410/61af87ba4504fe685ad005b8/header.png?auto=webp&width=432&disable=upscale" alt="">
                         <p>Aux côtés des agriculteurs</p>
                     </div>
@@ -30,7 +43,7 @@
                     <div class="sub_menu_item">
                         <img src="https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/blta6c06bb8ad080e37/61e1a543f26d4c3b491313f1/equipier_mcdo_pour_nav-resized.jpg?auto=webp&width=432&disable=upscale" alt="">
                         <p>Aux coeurs de nos territoires</p>
-                    </div>
+                    </div> -->
 
                 </div>
             </li>
@@ -40,8 +53,7 @@
                     <span [routerLink]="['/les-big-questions']" routerLinkActive="router-link-active" >
                         Les Big Questions
                     </span>
-                </span>
-                
+                </span>                
             </li>
 
             <li class="main-header-nav-item">

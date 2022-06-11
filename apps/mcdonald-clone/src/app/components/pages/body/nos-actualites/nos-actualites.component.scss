@@ -1,0 +1,33 @@
+.groupe-be {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 180px;
+
+    .titre-kely{
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .titre{
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 45px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+
+        &::after{
+            content : "";
+            position: absolute;
+            left    : 43%;
+            bottom  : 0;
+            width   : 10%;  
+            border-bottom: 15px solid rgb(111, 100, 111);
+            border-top-left-radius: 10px;
+        }
+    }
+
+
+
+}
